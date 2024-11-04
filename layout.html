@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "layout.css">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class = "header site-header">
     <div class = "flex-container">
         <h2>CTTG</h2>
 
@@ -27,9 +28,10 @@
 
             <h1 class = "page-heading">Sign in</h1>
 
+            <!--contains login and new customer container floats-->
             <div class = "login-row">
                
-            <form class = "login-form" action = "" method = "post">
+            <form class = "login-form form" action = "" method = "post">
                 <div class = "form-field">
                     <label class = "form-label" for = "login-email">Email Address: </label>
                     <input class = "form-input" name = "login-email" id = "login-email" type = "email">
@@ -68,18 +70,44 @@
                     </div>
                 </div>
             </div>
+
+            <!--class is to force class login row to encapsulate the floated elements-->
+            <br class="clear" />
         </div> <!--closes login row-->
         </div>
     </div>
-<!--
+
     <footer role = "contentinfo">
-        <section role = "region">
-            <div class = "footer-region">
-                <a href = "#" style = "color: whitesmoke">CTTG</a>
+        <section role = "region" style = "background-color: #263236;">
+            <div class = "footer_menu wrapper container">
+                <a href = "#" title = "home" style = "display: block; margin-bottom: 30px; padding-right: 16px; padding-left: 16px; font-size: 2em; text-transform: uppercase;">
+                    cttg
+                </a>
+
+                <div style = "padding-right:16px; padding-left:16px">
+                    <div class = "footer-flex_item">
+                        <a class = "ancor_footer" href = "#" role = "menu-item"><span>Company</span></a>
+                        <a class = "ancor_footer" href = "#" role = "menu-item"><span>Become a Dealer</span></a>
+                        <a class = "ancor_footer" href = "#" role = "menu-item"><span>Contact Us</span></a>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section role = "region" style = "background-color: #37474f;">
+            <div class = "footer__copyright wrapper" style = "padding: 60px 0 100px; text-align: center;">
+                <span>2024 CTTG Inc. All rights reserved.</span>
+                <span>Site by Kraken Ops</span>
+                <span>Private Policy</span>
+                <span>|</span>
+                <span>Terms and Conditions of Use</span>
+            </div>
+        </section>
+
+        
+
     </footer>
--->
+
     
 </body>
 </html>
